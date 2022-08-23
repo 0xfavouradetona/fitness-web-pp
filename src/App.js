@@ -5,7 +5,7 @@ import './App.css'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import ExcerciseDetail from './pages/ExcerciseDetail';
+import ExerciseDetail from './pages/ExerciseDetail';
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
         <Navbar />
         <Routes>
             <Route path="/" element= {<Home />} />
-            <Route path="/exercise:/id" element= {<ExcerciseDetail />} />
+            <Route path="/exercise/:id" element= {<ExerciseDetail />} />
         </Routes>
         <Footer />
     </Box>
